@@ -1,7 +1,11 @@
-import Button from '@mui/material/Button'
+import { Container, Typography } from '@mui/material'
 
-function App() {
-  return <Button variant="contained">Hello world</Button>
+export const App = () => {
+  return (
+    <Container maxWidth="sm" sx={{ my: 8 }}>
+      <Typography variant="body1" gutterBottom>
+        A form needs to be created here.
+      </Typography>
+    </Container>
+  )
 }
-
-export default App
