@@ -1,11 +1,13 @@
-import { Container, Typography } from '@mui/material'
+import { GlobalStyles, ThemeProvider } from "@mui/material"
+import { RegistrationPage } from "./pages/RegistrationPage"
+import theme from "./theme"
 
 export const App = () => {
   return (
-    <Container maxWidth="sm" sx={{ my: 8 }}>
-      <Typography variant="body1" gutterBottom>
-        A form needs to be created here.
-      </Typography>
-    </Container>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles styles={{ html: { margin: 0 }, body: { margin: 0 } }} />
+      <RegistrationPage />
+    </ThemeProvider>
+
   )
 }
